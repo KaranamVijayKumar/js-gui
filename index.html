@@ -23,7 +23,7 @@
     </p>
 
     <p>Enter first String:
-      <input id="str1" type="string" value="Vijay">
+      <input id="str1" type="string" value="Kumar">
     </p>
 
     <p>Enter second String:
@@ -42,7 +42,7 @@
     console.log('Declare testable functions.....................')
 
     function max(x, y) {
-      return Math.max(str1.length, str2.length)
+      return Math.max(x.length, y.length)
     }
     console.log('Defined max=' + max)
 
@@ -54,7 +54,7 @@
       console.log('i=' + i)
       const j = parseInt(document.getElementById('str2').value)
       console.log('j=' + j)
-      const ans = s + ', Maximum of the String is' + Math.max(i.length, j.length) + '.'
+      const ans = s + ', Maximum of the given two Strings is' + Math.max(i.length, j.length) + '.'
       document.getElementById('result').innerHTML = ans
     })
 
